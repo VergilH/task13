@@ -1,0 +1,63 @@
+@charset 'utf-8';
+@import "public";
+
+nav {
+	margin: 14px 6%;
+	width: $width - 12;
+	height: 60px;
+	@include greyborder;
+	text-align: center;
+	background : $white;
+	.right-arrow {
+		display: inline-block;
+		float: right;
+		width: 16px;
+		height: 16px;
+	}
+}
+
+main {
+	margin: 0 6% 20px;
+	width: $width -12;
+	@include greyborder;
+	background: $white;
+	text-align: center;
+	.title {
+		width: $width;
+		height: 45px;
+		@include greyborder-bot;
+		border-color: #fdd793;
+		text-align: center;
+	}
+	a {
+		display: block;
+		margin: 0 9%;
+		width: $width - 18;
+	}
+	.choise-edition {
+		width: $width;
+		height: 65px;
+		background: $frenchblue;
+	}
+	.big-arrow {
+    border-width: 16px;
+    border-style: solid;
+    border-color: $orange transparent transparent transparent;    
+    transform: rotate(-90deg);
+    background: #fff;
+	}
+	.spot {
+		display: inline-block;
+		margin: 0 .5px;
+		width: 8px;
+		height: 8px;
+    border-radius: 4px;
+		background: $littlegrey;
+		&:hover {
+			background: $frenchblue;
+		}
+		&:focus {
+			background: $frenchblue;
+		}
+	}
+}
