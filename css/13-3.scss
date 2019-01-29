@@ -12,6 +12,22 @@ header {
 	text-align: center;
 }
 
+.center-img {
+	display: block;
+	margin: 0 auto;
+	width: $width - 45;
+}
+
+
+content {
+	display: inline-block;
+	width: $width;
+	height: 82px;
+	border-bottom: 1px solid #ddd;
+	background: $white;
+	color: $black;
+}
+
 
 footer {
 	width: $width;

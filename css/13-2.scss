@@ -7,7 +7,65 @@ body {
 }
 
 .summary {
+	height: 42px;
 	background: $blue-grey; 
+}
+
+main {
+	margin: 0 $width - 94;
+	width: $width - 12;
+	.choise-person {
+		width: 68px;
+		&:hover .icon{
+			visibility: visible;
+		}
+		&:focus .icon{
+			visibility: visible;
+		}
+	}
+	.number {
+		width: 63px;
+		height: 50px;
+		border-top: 2.5px solid $white;
+		border-right: 2.5px solid $white;
+		border-left: 2.5px solid $white;
+		background: #f5c97b;
+	}
+	.name {
+		width: 63px;
+		height: 13px;
+		border-right: 2.5px solid $white;
+		border-left: 2.5px solid $white;
+		border-bottom: 2.5px solid $white;
+		background: #83b09a;
+	}
+	.choise-icon {
+		width: 15px;
+		height: 15px;
+	}
+	.icon {
+		visibility: hidden;
+		margin-top: 11px;
+		width: $width;
+		letter-spacing: -2.5px;
+		button {
+			width: 15.2px;
+			height: 15.2px;
+			background-size: cover;
+		}
+	}
+	.icon-knife {
+		background: url(../images/knife.png) 100% no-repeat;
+	}
+	.icon-aim {
+		background: url(../images/aim.png) 100% no-repeat;
+	}
+	.icon-heal {
+		background: url(../images/heal.png) 100% no-repeat;
+	}
+	.icon-magnifier {
+		background: url(../images/magnifier.png) 100% no-repeat;
+	}
 }
 
 
