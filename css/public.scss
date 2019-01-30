@@ -27,6 +27,8 @@ $orange : #fbb435;
 
 $blue-grey : #b9e9f5;
 
+$deepgrey : #9a9a9a;
+
 $red : #f66f6f;
 
 $grey : #c9c9c9;
@@ -39,7 +41,7 @@ $white : #fff;
 
 $black : #787878;
 
-$font-size : 18px;
+$font-size : 16px;
 
 //混合器
 @mixin greyborder {
@@ -103,6 +105,10 @@ button {
   color: $grey;
 }
 
+.deepgrey-text {
+  color: $deepgrey;
+}
+
 .white-text {
   color: $white;
 }
@@ -117,14 +123,13 @@ button {
 
 //字体大小 
 .font-lg {
-  margin: 20px 0 10px;
-    font-size: $font-size;
+    font-size: $font-size + 2;
 }
 .font-nm {
-    font-size: $font-size - 2;
+    font-size: $font-size;
 }
 .font-sm {
-    font-size: $font-size - 4;
+    font-size: $font-size - 2;
 }
 
 //浮动
@@ -142,11 +147,31 @@ button {
   margin: 0 auto;
 }
 
+.setcenter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 //箭头图标
 .right-arrow {
   border-right: 3px solid $frenchgrey;
   border-bottom: 3px solid $frenchgrey;
   transform: rotate(-45deg);
+}
+
+//实心箭头
+@mixin arrow {
+    font-size: 0;
+    line-height: 0;
+    border-width: 16px;
+    border-color: $orange;
+    border-right-width: 0;
+    border-style: dashed;
+    border-left-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
 }
 
 body {

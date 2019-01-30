@@ -1,9 +1,17 @@
 @charset 'utf-8';
 @import "public";
 
+.font-12 {
+	font-size: 12px;
+}
+
 body {
 	background: $blue;
 	color: $white;
+}
+
+header {
+
 }
 
 .summary {
@@ -30,6 +38,7 @@ main {
 		border-right: 2.5px solid $white;
 		border-left: 2.5px solid $white;
 		background: #f5c97b;
+		color: #565656;
 	}
 	.name {
 		width: 63px;
