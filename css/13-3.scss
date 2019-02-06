@@ -7,15 +7,38 @@ body {
 }
 
 header {
+	margin-bottom: 14px;
 	@include greyborder-bot;
 	border-color: #74e4db;
 	text-align: center;
+	button {
+		position: absolute;
+	}
+	.home-icon {
+		left: 12px;
+		top: 11px;
+		width: 27px;
+		height: 22px;
+		background: url(../images/home.png);
+		background-size:  100% 100%;
+	}
+	.info-icon {
+		right: 12px;
+		top: 10.5px;
+		width: 24px;
+		height: 24px;
+		background: url(../images/info.png);
+		background-size:  100% 100%;
+	}
 }
 
-.center-img {
-	display: block;
-	margin: 0 auto;
-	width: $width - 45;
+main {
+	width: $width - 25;
+	.center-img {
+		display: block;
+		margin: 0 auto;
+		width: $width - 25;
+	}
 }
 
 
@@ -25,7 +48,14 @@ content {
 	height: 82px;
 	border-bottom: 1px solid #ddd;
 	background: $white;
-	color: $black;
+	color: #a6a6a6;
+	.deepblack {
+		color: #515151;
+	}
+	.frenchgrey {
+		font-size: $font-size - 4;
+		color: #d6d6d6;
+	}
 }
 
 
@@ -44,6 +74,7 @@ footer {
 		}
 	}
 	.bg-red {
+		line-height: 42px;
 		background-color: $red;
 	}
 	.bg-orange {

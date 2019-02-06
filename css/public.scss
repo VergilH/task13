@@ -39,6 +39,8 @@ $littlegrey : #f0f0f0;
 
 $white : #fff;
 
+$yellow : #ffc865;
+
 $black : #787878;
 
 $deepblack : #464646;
@@ -127,6 +129,10 @@ button {
   color: $orange;
 }
 
+.yellow-text {
+  color: $yellow;
+}
+
 //字体大小 
 .font-lg {
     font-size: $font-size + 2;
@@ -149,10 +155,14 @@ button {
   clear: both;
 }
 
+
+//水平居中
 .setmiddle {
   margin: 0 auto;
 }
 
+
+//垂直水平居中
 .setcenter {
   position: relative;
   display: flex;
@@ -179,6 +189,8 @@ button {
     border-top-color: transparent;
     border-bottom-color: transparent;
 }
+
+//默认样式
 
 body {
   margin: 0;
