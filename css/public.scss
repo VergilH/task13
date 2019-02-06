@@ -41,6 +41,8 @@ $white : #fff;
 
 $black : #787878;
 
+$deepblack : #464646;
+
 $font-size : 16px;
 
 //混合器
@@ -115,6 +117,10 @@ button {
 
 .black-text {
   color: $black;
+}
+
+.deepblack-text {
+  color: $deepblack;
 }
 
 .orange-text {
