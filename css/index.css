@@ -56,8 +56,14 @@ button {
 .black-text {
   color: #787878; }
 
+.deepblack-text {
+  color: #464646; }
+
 .orange-text {
   color: #fbb435; }
+
+.yellow-text {
+  color: #ffc865; }
 
 .font-lg {
   font-size: 18px; }
@@ -109,6 +115,11 @@ header {
   height: 16px;
   background: url(../images/sm-hbg.png) 100% no-repeat;
   background-size: cover; }
+
+.left-menu {
+  z-index: 10;
+  position: relative;
+  width: 75%; }
 
 nav {
   margin: 14px 6%;

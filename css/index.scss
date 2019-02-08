@@ -11,6 +11,12 @@
 	background-size: cover;
 }
 
+.left-menu {
+	z-index: 10;
+	position: relative;
+	width: $width - 25;
+}
+
 nav {
 	margin: 14px 6%;
 	width: $width - 12;

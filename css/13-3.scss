@@ -4,6 +4,11 @@
 body {
 	background: $blue;
 	color: $white;
+	letter-spacing: 1px;
+}
+
+p {
+	margin-bottom: 5px;
 }
 
 header {
@@ -30,13 +35,18 @@ header {
 		background: url(../images/info.png);
 		background-size:  100% 100%;
 	}
+	p {
+		margin: 0;
+	}
 }
 
 main {
-	width: $width - 25;
+	padding: 0 35px 10px;
+	width: $width;
+	box-sizing: border-box;
 	.center-img {
 		display: block;
-		margin: 0 auto;
+		margin: 0 auto 10px;
 		width: $width - 25;
 	}
 }
@@ -44,11 +54,12 @@ main {
 
 content {
 	display: inline-block;
+	padding: 3px 35px 20px;
 	width: $width;
 	height: 82px;
-	border-bottom: 1px solid #ddd;
 	background: $white;
 	color: #a6a6a6;
+	box-sizing: border-box;
 	.deepblack {
 		color: #515151;
 	}
@@ -56,12 +67,24 @@ content {
 		font-size: $font-size - 4;
 		color: #d6d6d6;
 	}
+	p {
+		margin: 0;
+	}
+	.content-middle {
+		margin-top: 8px;
+	}
 }
 
+.greyborder {
+	width: $width;
+	@include greyborder-bot;
+}
 
 footer {
+	position: fixed;
+	bottom: 0;
 	width: $width;
-	background-color: rgba(41,189,224,.9);
+	background-color: rgba(41,189,224,.5);
 	.btn {
 		margin: $width / 25;
 		width: $width - 58;
