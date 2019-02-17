@@ -7,13 +7,18 @@
 	<title>选择版本</title>
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/aside.css">
 </head>
 <body>
-	<div class="left-menu">
-	</div>
+	<aside class="left-menu" id="box">
+		<div class="left-menu-box"><p>公告</p><div class="right-arrow"></div></div>
+		<div class="left-menu-box"><p>设置</p><div class="right-arrow"></div></div>
+		<div class="left-menu-box"><p>帮助</p><div class="right-arrow"></div></div>
+		<div class="left-menu-box"><p>关于</p><div class="right-arrow"></div></div>
+	</aside>
 
 	<header>
-		<button type="button" class="hbg-icon"></button>
+		<button type="button" class="hbg-icon" id="btn"></button>
 	</header>
 
 	<nav class="setcenter">
@@ -42,5 +47,6 @@
 		<button type="button" class="spot"></button>
 		<button type="button" class="spot"></button>
 	</main>
+	<script src="js/aside.js"></script>
 </body>
 </html>
