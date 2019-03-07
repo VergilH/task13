@@ -92,11 +92,6 @@ button {
   align-items: center;
   justify-content: center; }
 
-.right-arrow {
-  border-right: 3px solid #e1e5e7;
-  border-bottom: 3px solid #e1e5e7;
-  transform: rotate(-45deg); }
-
 body {
   margin: 0;
   background-color: #f0f0f0; }
@@ -166,6 +161,9 @@ content {
   content .content-middle {
     margin-top: 8px; }
 
+.footer_margin {
+  margin-bottom: 82px; }
+
 .greyborder {
   width: 100%;
   border-bottom: 1px solid #e1e5e7; }
@@ -176,7 +174,7 @@ footer {
   width: 100%;
   background-color: rgba(41, 189, 224, 0.5); }
   footer .btn {
-    margin: 4%;
+    margin: 20px 4%;
     width: 42%;
     height: 42px;
     border-radius: 5px; }
@@ -190,4 +188,4 @@ footer {
   footer .bg-orange {
     background-color: #fbb435; }
 
-/*# sourceMappingURL=13-3.css.map */
+/*# sourceMappingURL=result.css.map */
